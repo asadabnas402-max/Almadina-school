@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Almadina Public High School & College</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+header{
+background:#0b3d91;
+color:white;
+padding:15px 8%;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:70px;
+height:70px;
+border-radius:50%;
+background:white;
+padding:4px;
+}
+
+.logo h2{
+font-size:22px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("school.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#00c853;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#009624;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#0b3d91;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.about-text{
+font-size:18px;
+line-height:1.8;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#0b3d91;
+margin-bottom:15px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.contact{
+background:#0b3d91;
+color:white;
+border-radius:20px;
+padding:50px;
+}
+
+.contact p{
+font-size:20px;
+margin:15px 0;
+}
+
+footer{
+background:#06285f;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:35px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="navbar">
+
+<div class="logo">
+<img src="logo.jpg" alt="School Logo">
+
+<div>
+<h2>Almadina Public School</h2>
+<small>Fateh Bumb, Bhakkar</small>
+</div>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Facilities</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Almadina Public High School & College</h1>
+
+<p>
+Providing Quality Education, Islamic Values,
+Discipline and Academic Excellence.
+</p>
+
+<a href="#contact" class="btn">
+Admissions Open
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Our School</h2>
+
+<div class="about">
+
+<img src="school.jpg">
+
+<div class="about-text">
+
+<p>
+
+Almadina Public High School & College is dedicated to
+providing quality education in a disciplined and
+Islamic environment.
+
+We focus on academic excellence, character building,
+computer education and moral values.
+
+Our mission is to prepare students for a bright future
+and help them become responsible citizens.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Why Choose Us?</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>Qualified Teachers</h3>
+<p>Experienced and dedicated teaching staff.</p>
+</div>
+
+<div class="card">
+<h3>Computer Education</h3>
+<p>Modern learning with technology and innovation.</p>
+</div>
+
+<div class="card">
+<h3>Islamic Environment</h3>
+<p>Character building with Islamic values.</p>
+</div>
+
+<div class="card">
+<h3>Quality Education</h3>
+<p>Focus on academic excellence and success.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">School Gallery</h2>
+
+<div class="gallery">
+
+<img src="school.jpg">
+<img src="school.jpg">
+<img src="school.jpg">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>Contact Information</h2>
+
+<p><strong>Principal:</strong> 0334-7612653</p>
+
+<p><strong>Vice Principal:</strong> 0310-4979412</p>
+
+<p><strong>Address:</strong> Basti Fateh Bumb, Behal, Bhakkar</p>
+
+<p><strong>Email:</strong> info@almadinaschool.edu.pk</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Almadina Public High School & College
+| All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>

@@ -5,15 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Almadina Public High School & College</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:'Segoe UI',sans-serif;
 scroll-behavior:smooth;
 }
 
@@ -52,22 +49,17 @@ background:white;
 padding:4px;
 }
 
-.logo h2{
-font-size:22px;
-}
-
 nav a{
-text-decoration:none;
 color:white;
+text-decoration:none;
 margin-left:20px;
-font-weight:500;
+font-weight:bold;
 }
 
 .hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("school.jpg");
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('IMG-20260304-WA0033.jpg');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -75,36 +67,29 @@ justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
-padding:20px;
 }
 
-.hero-content h1{
-font-size:60px;
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
 margin-bottom:20px;
 }
 
-.hero-content p{
-font-size:22px;
-margin-bottom:30px;
-}
-
 .btn{
-display:inline-block;
-padding:14px 30px;
 background:#00c853;
 color:white;
+padding:14px 28px;
 text-decoration:none;
 border-radius:30px;
 font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-background:#009624;
 }
 
 section{
-padding:80px 10%;
+padding:70px 10%;
 }
 
 .title{
@@ -124,41 +109,30 @@ align-items:center;
 .about img{
 width:100%;
 border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.2);
+box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
-.about-text{
-font-size:18px;
-line-height:1.8;
-}
-
-.features{
+.cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 }
 
 .card{
 background:white;
-padding:30px;
+padding:25px;
 border-radius:15px;
-text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
 .card h3{
 color:#0b3d91;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
@@ -171,13 +145,13 @@ box-shadow:0 5px 15px rgba(0,0,0,.2);
 .contact{
 background:#0b3d91;
 color:white;
-border-radius:20px;
-padding:50px;
+padding:40px;
+border-radius:15px;
 }
 
 .contact p{
-font-size:20px;
-margin:15px 0;
+margin:12px 0;
+font-size:18px;
 }
 
 footer{
@@ -187,14 +161,26 @@ text-align:center;
 padding:20px;
 }
 
-@media(max-width:768px){
-
-.hero-content h1{
-font-size:35px;
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
 }
+
+@media(max-width:768px){
 
 .about{
 grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:34px;
 }
 
 nav{
@@ -202,7 +188,6 @@ display:none;
 }
 
 }
-
 </style>
 </head>
 
@@ -212,18 +197,18 @@ display:none;
 <div class="navbar">
 
 <div class="logo">
-<img src="logo.jpg" alt="School Logo">
-
+<img src="IMG-20260304-WA0032.jpg" alt="Logo">
 <div>
-<h2>Almadina Public School</h2>
-<small>Fateh Bumb, Bhakkar</small>
+<h2>Almadina Public High School & College</h2>
+<small>Basti Fateh Bumb, Behal, Bhakkar</small>
 </div>
 </div>
 
 <nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
-<a href="#services">Facilities</a>
+<a href="#facilities">Facilities</a>
+<a href="#leadership">Leadership</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -232,78 +217,112 @@ display:none;
 </header>
 
 <section class="hero" id="home">
-
-<div class="hero-content">
-
+<div>
 <h1>Almadina Public High School & College</h1>
-
-<p>
-Providing Quality Education, Islamic Values,
-Discipline and Academic Excellence.
-</p>
-
-<a href="#contact" class="btn">
-Admissions Open
-</a>
-
+<p>Quality Education • Discipline • Character Building</p>
+<a href="#contact" class="btn">Admissions Open</a>
 </div>
-
 </section>
 
 <section id="about">
 
-<h2 class="title">About Our School</h2>
+<h2 class="title">About Us</h2>
 
 <div class="about">
 
-<img src="school.jpg">
+<img src="IMG-20260304-WA0034.jpg">
 
-<div class="about-text">
-
-<p>
-
-Almadina Public High School & College is dedicated to
-providing quality education in a disciplined and
-Islamic environment.
-
-We focus on academic excellence, character building,
-computer education and moral values.
-
-Our mission is to prepare students for a bright future
-and help them become responsible citizens.
-
+<div>
+<p style="font-size:18px; line-height:1.8;">
+Almadina Public High School & College is committed to providing
+quality education in a disciplined and Islamic environment.
+We strive to develop students academically, morally, and socially,
+preparing them for success in life and service to society.
 </p>
-
 </div>
 
 </div>
 
 </section>
 
-<section id="services">
+<section id="facilities">
 
-<h2 class="title">Why Choose Us?</h2>
+<h2 class="title">Our Facilities</h2>
 
-<div class="features">
+<div class="cards">
 
 <div class="card">
 <h3>Qualified Teachers</h3>
-<p>Experienced and dedicated teaching staff.</p>
+<p>Dedicated and experienced teaching staff.</p>
 </div>
 
 <div class="card">
 <h3>Computer Education</h3>
-<p>Modern learning with technology and innovation.</p>
+<p>Modern technology-based learning environment.</p>
 </div>
 
 <div class="card">
 <h3>Islamic Environment</h3>
-<p>Character building with Islamic values.</p>
+<p>Strong moral and ethical values.</p>
 </div>
 
 <div class="card">
-<h3>Quality Education</h3>
-<p>Focus on academic excellence and success.</p>
+<h3>Sports Activities</h3>
+<p>Physical fitness and extracurricular development.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="leadership">
+
+<h2 class="title">Leadership Messages</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Principal's Message</h3>
+<h4>Mr. Zafar Iqbal Cheena</h4>
+
+<p style="line-height:1.8;">
+Welcome to Almadina Public High School & College.
+
+Education is the foundation of a successful future.
+Our mission is to provide high-quality education,
+strong moral values, discipline, and leadership skills.
+
+We believe every student has the ability to achieve excellence.
+Through dedication, hard work, and guidance, we prepare our students
+to become responsible citizens and future leaders.
+
+Together, let us build a brighter future through knowledge,
+character, and commitment.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Vice Principal's Message</h3>
+<h4>Mr. Asad Abbas</h4>
+
+<p style="line-height:1.8;">
+At Almadina Public High School & College, we are committed
+to creating a positive and inspiring learning environment.
+
+Our goal is to encourage confidence, creativity, discipline,
+and academic excellence in every student.
+
+We work closely with teachers, parents, and students to ensure
+continuous growth and success. Through innovation, dedication,
+and teamwork, we aim to prepare our students for future challenges
+and opportunities.
+
+Together, we strive for excellence and lifelong learning.
+</p>
+
 </div>
 
 </div>
@@ -316,9 +335,9 @@ and help them become responsible citizens.
 
 <div class="gallery">
 
-<img src="school.jpg">
-<img src="school.jpg">
-<img src="school.jpg">
+<img src="IMG-20260304-WA0033.jpg">
+<img src="IMG-20260304-WA0034.jpg">
+<img src="IMG-20260304-WA0035.jpg">
 
 </div>
 
@@ -331,25 +350,20 @@ and help them become responsible citizens.
 <h2>Contact Information</h2>
 
 <p><strong>Principal:</strong> 0334-7612653</p>
-
 <p><strong>Vice Principal:</strong> 0310-4979412</p>
-
 <p><strong>Address:</strong> Basti Fateh Bumb, Behal, Bhakkar</p>
-
-<p><strong>Email:</strong> info@almadinaschool.edu.pk</p>
 
 </div>
 
 </section>
 
 <footer>
-
-<p>
-© 2026 Almadina Public High School & College
-| All Rights Reserved
-</p>
-
+<p>© 2026 Almadina Public High School & College | All Rights Reserved</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/923104979412">
+WhatsApp
+</a>
 
 </body>
 </html>
